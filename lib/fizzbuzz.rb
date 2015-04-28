@@ -1,11 +1,13 @@
-def fizzbuzz(n)
-  if n % 3 == 0 && n % 5 == 0
-    'fizzbuzz'
-  elsif n % 3 == 0
-    'fizz'
-  elsif n % 5 == 0
-    'buzz'
-  else
-    n
+class Fixnum
+    def fizzbuzz
+    if self % 3 == 0 && self % 5 == 0
+      'fizzbuzz'
+    elsif self % 3 == 0
+      'fizz'
+    elsif self % 5 == 0
+      'buzz'
+    else
+      self
+    end
   end
 end
